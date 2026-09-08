@@ -1,1 +1,1032 @@
-LOADING
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASTODONT AI HUB - Материалы к видео</title>
+<meta name="description" content="MASTODONT AI HUB - все промпты, гайды и инструкции к видео канала ИИ Мастодонт.">
+<link rel="icon" href="img/9a2cdd8838d2.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700;800;900&family=Unbounded:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg-raised:#0a0a0f;--bg-card:#0c0c10;--bg-card-hover:#111117;--yellow:#daa520;--yellow-dim:rgba(218,165,32,0.12);--yellow-border:rgba(218,165,32,0.3);--blue:#ffffff;--blue-bright:#ffffff;--blue-dim:rgba(255,255,255,0.06);--blue-border:rgba(255,255,255,0.15);--blue-glow:rgba(255,255,255,0.15);--text:#e8e8ed;--text-dim:#8a8aa0;--text-muted:#555570;--border:rgba(255,255,255,0.06);--border-hover:rgba(255,255,255,0.12);--border-dashed:rgba(255,255,255,0.08)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+
+
+/* ══════ HERO ANIMATIONS ══════ */
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.06) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 60% 50% at 50% 40%,black 20%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 60% 50% at 50% 40%,black 20%,transparent 100%);animation:gridPulse 20s ease-in-out infinite;pointer-events:none}
+@keyframes gridPulse{0%{opacity:.5;transform:translate(0,0)}25%{opacity:.85;transform:translate(-8px,5px)}50%{opacity:1;transform:translate(3px,-8px)}75%{opacity:.7;transform:translate(6px,3px)}100%{opacity:.5;transform:translate(0,0)}}
+
+.hero-title{position:relative}
+.glitch{animation:glitchIn .8s .2s ease both}
+@keyframes glitchIn{0%{opacity:0;transform:translateY(20px);filter:blur(8px)}30%{opacity:1;transform:translateY(-2px) skewX(-2deg);filter:blur(0);text-shadow:3px 0 rgba(255,255,255,0.6),-3px 0 #daa520}50%{transform:translateY(1px) skewX(1deg);text-shadow:-2px 0 #daa520,2px 0 rgba(255,255,255,0.6)}65%{transform:translateY(-1px) skewX(-0.5deg);text-shadow:1px 0 rgba(255,255,255,0.5),-1px 0 #daa520}80%{transform:translateY(0);text-shadow:0 0 transparent}100%{opacity:1;transform:translateY(0);filter:blur(0);text-shadow:none}}
+
+.hero-title .blue{display:inline-block;animation:blueReveal .6s .5s ease both;color:#daa520}
+@keyframes blueReveal{0%{opacity:0;transform:translateX(-30px);filter:blur(6px)}60%{filter:blur(0)}100%{opacity:1;transform:translateX(0)}}
+
+.hero-scan-line{position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(218,165,32,0.3),transparent);animation:scanDown 8s 4s ease-in-out infinite;pointer-events:none;opacity:0}
+@keyframes scanDown{0%{top:0;opacity:0}5%{opacity:1}95%{opacity:1}100%{top:100%;opacity:0}}
+
+.hero-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-particle{position:absolute;width:2px;height:2px;background:rgba(255,255,255,0.2);border-radius:50%;animation:particleFloat linear infinite}
+.hero-particle:nth-child(1){left:15%;animation-duration:12s;animation-delay:0s}
+.hero-particle:nth-child(2){left:35%;animation-duration:15s;animation-delay:2s;width:3px;height:3px;background:rgba(218,165,32,0.3)}
+.hero-particle:nth-child(3){left:55%;animation-duration:10s;animation-delay:4s}
+.hero-particle:nth-child(4){left:75%;animation-duration:14s;animation-delay:1s;width:3px;height:3px}
+.hero-particle:nth-child(5){left:90%;animation-duration:11s;animation-delay:3s;background:rgba(218,165,32,0.3)}
+.hero-particle:nth-child(6){left:25%;animation-duration:13s;animation-delay:5s}
+@keyframes particleFloat{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1;transform:translateY(90vh) scale(1)}90%{opacity:1}100%{transform:translateY(-10vh) scale(0);opacity:0}}
+
+.hero-sub{animation:fadeInUp .7s .4s ease both!important}
+.hero-btn{animation:fadeInUp .7s .6s ease both!important}
+.hero-btn:hover{box-shadow:0 0 30px rgba(255,255,255,0.1)}
+
+
+.hero-title{cursor:pointer}
+.glitch-ready{opacity:1!important;transform:none!important;filter:none!important}
+
+
+
+
+
+
+
+
+
+.hero-title.glitch-ready:hover{animation:hoverGlitch .3s steps(3) infinite}
+.hero-title:hover .blue{text-shadow:0 0 20px rgba(255,255,255,0.4),0 0 60px rgba(255,255,255,0.1);filter:brightness(1.3)}
+@keyframes hoverGlitch{0%{text-shadow:3px 0 rgba(255,255,255,0.6),-3px 0 #daa520;transform:skewX(-1deg)}25%{text-shadow:-2px 0 #daa520,2px 0 rgba(255,255,255,0.6);transform:skewX(1deg)}50%{text-shadow:2px 1px rgba(255,255,255,0.5),-2px -1px #daa520;transform:skewX(-0.5deg)}75%{text-shadow:-1px 0 #daa520,1px 0 rgba(255,255,255,0.5);transform:skewX(0.3deg)}100%{text-shadow:none;transform:skewX(0)}}
+
+
+/* ══════ CUSTOM CURSOR ══════ */
+*{cursor:url("img/822bbd6c96d1.png") 10 2,auto!important}
+.cursor-dot{display:none}
+.cursor-ring{position:fixed;top:0;left:0;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.15);pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s,opacity .3s}
+.cursor-dot.hovering{display:none}
+.cursor-ring.hovering{width:60px;height:60px;border-color:rgba(218,165,32,.5)}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:60px;background:rgba(5,5,7,0.88);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+/* LOGO: замени src на путь к своему лого */
+.nav-logo img{height:28px;width:auto}
+.nav-logo-icon{color:var(--blue);font-size:1.3rem;font-weight:700;font-family:'Space Mono',monospace}
+.nav-logo-text{font-family:'Unbounded',sans-serif;font-weight:800;font-size:0.95rem;letter-spacing:0.02em}
+.nav-right{display:flex;align-items:center;gap:1.8rem}
+.nav-link{font-family:'Space Mono',monospace;font-size:0.65rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;transition:color .2s}
+.nav-link:hover{color:var(--text)}
+.nav-tg{display:flex;align-items:center;gap:8px;padding:7px 16px;background:transparent;border:1px solid rgba(255,255,255,0.25);border-radius:8px;font-family:'Space Mono',monospace;font-size:0.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#fff;text-decoration:none;transition:all .2s}
+.nav-tg:hover{background:#f59e0b;border-color:#f59e0b;color:#050507;box-shadow:0 0 20px rgba(245,158,11,0.25)}
+.nav-tg svg{width:13px;height:13px}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem 3rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 40% at 50% 35%,rgba(255,255,255,0.03) 0%,transparent 100%);pointer-events:none}
+.hero-status{display:inline-flex;align-items:center;gap:10px;margin-bottom:2rem;animation:fadeIn .6s ease both}
+.hero-status-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:blink 2s ease-in-out infinite}
+.hero-status-text{font-family:'Space Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
+.hero-title{font-family:'Unbounded',sans-serif;font-weight:900;font-size:clamp(3rem,8vw,6.5rem);line-height:.95;letter-spacing:-.02em;margin-bottom:1.5rem;animation:fadeInUp .7s .1s ease both}
+.hero-title .blue{color:#daa520}
+.hero-sub{font-family:'Space Mono',monospace;font-size:clamp(.75rem,1.2vw,.88rem);color:var(--text-dim);line-height:1.9;max-width:520px;margin-bottom:2.5rem;animation:fadeInUp .7s .2s ease both}
+.hero-sub strong{color:var(--yellow)}
+.hero-sub .bl{color:var(--blue);font-weight:700}
+.hero-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:10px;font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--text);border:1px solid var(--border-hover);transition:all .25s;animation:fadeInUp .7s .3s ease both}
+.hero-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.hero-btn svg{width:16px;height:16px}
+.hero-btn.hero-btn-intensiv{animation:none!important;opacity:1!important;padding:20px clamp(18px,5vw,46px);font-size:.95rem;background-color:#fff;background-image:none;color:#050507;border:none;box-shadow:0 10px 36px rgba(255,255,255,0.14),0 0 44px rgba(255,255,255,0.08);transition:background-color .25s ease,box-shadow .25s ease,transform .25s ease}
+.hero-btn.hero-btn-intensiv svg{width:18px;height:18px}
+.hero-btn.hero-btn-intensiv:hover{background-color:#ffce33;background-image:none;color:#050507;border:none;box-shadow:0 14px 44px rgba(218,165,32,0.4),0 0 60px rgba(218,165,32,0.3);transform:translateY(-2px)}
+.hero-meta{position:absolute;bottom:1.8rem;left:0;right:0;display:flex;justify-content:space-between;padding:0 2.5rem;animation:fadeIn .7s .5s ease both}
+.hero-meta span{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted)}
+.scroll-arrow{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);color:var(--text-muted);animation:fadeIn .7s .6s ease both,bounce 2.5s 1.5s ease-in-out infinite}
+.scroll-arrow svg{width:20px;height:20px}
+
+/* ══════ ABOUT SECTION ══════ */
+.about{max-width:1120px;margin:0 auto;padding:5rem 2rem 2rem}
+.about-box{display:grid;grid-template-columns:240px 1fr;gap:3.5rem;align-items:center;padding:3rem;background:var(--bg-card);border:1px dashed var(--border-dashed);border-radius:20px;position:relative;overflow:hidden}
+.about-box::before{content:'';position:absolute;top:-60%;left:-20%;width:400px;height:400px;background:radial-gradient(circle,var(--yellow-dim) 0%,transparent 70%);pointer-events:none}
+.about-photo{position:relative;z-index:1;align-self:stretch}
+/* ФОТО: замени src на путь к своей фотке */
+.about-photo img{width:100%;height:100%;border-radius:16px;object-fit:cover;object-position:center top;border:none;display:block}
+.about-photo-placeholder{width:140px;height:140px;border-radius:16px;border:2px solid var(--yellow-border);background:var(--bg-raised);display:flex;align-items:center;justify-content:center;font-size:3.5rem}
+.about-photo-tag{font-family:'Space Mono',monospace;font-size:.55rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);text-align:center;margin-top:.6rem}
+.about-content{position:relative;z-index:1}
+.about-name{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.4rem;margin-bottom:.3rem}
+.about-role{font-family:'Space Mono',monospace;font-size:.7rem;color:var(--yellow);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.2rem}
+.about-bio{font-family:'Space Mono',monospace;font-size:.78rem;color:var(--text-dim);line-height:1.8;margin-bottom:1.5rem;max-width:500px}
+.about-bio strong{color:var(--text);font-weight:700}
+.about-bio .bl{color:var(--blue)}
+.about-stats{display:flex;gap:2.5rem}
+.about-stat-value{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.3rem;line-height:1}
+.about-stat-label{font-family:'Space Mono',monospace;font-size:.55rem;color:var(--text-muted);letter-spacing:.1em;text-transform:uppercase;margin-top:.35rem}
+
+/* ══════ MAIN ══════ */
+.main{max-width:1120px;margin:0 auto;padding:4rem 2rem 2rem}
+
+/* Featured */
+.feat-label{font-family:'Space Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.2rem;display:flex;align-items:center;gap:8px}
+.feat-label .dot{width:6px;height:6px;background:var(--blue);border-radius:50%;animation:blink 2s ease-in-out infinite}
+.featured{display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:all .35s;margin-bottom:4rem}
+.featured:hover{border-color:var(--blue-border);box-shadow:0 20px 60px rgba(255,255,255,0.04),0 4px 20px rgba(0,0,0,0.4)}
+.featured:hover .feat-play{opacity:1}
+.featured:hover .feat-arrow{transform:translateX(6px);color:#daa520}
+.featured:hover .feat-cta{text-shadow:0 0 20px rgba(218,165,32,0.5),0 0 50px rgba(218,165,32,0.2)}
+.feat-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;border-right:1px solid var(--border)}
+/* ПРЕВЬЮ: замени background на url() с превью видео */
+.feat-thumb-img{width:100%;height:100%;object-fit:cover;display:block}
+.feat-thumb-placeholder{width:100%;height:100%;background:linear-gradient(135deg,#0d1020 0%,#131830 50%,#0d1020 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;opacity:.2}
+.feat-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.04);opacity:0;transition:opacity .3s}
+.feat-play svg{width:56px;height:56px;color:var(--blue);filter:drop-shadow(0 0 20px var(--blue-glow))}
+.feat-tag{position:absolute;top:14px;left:14px;font-family:'Space Mono',monospace;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);background:rgba(0,0,0,.75);backdrop-filter:blur(8px);border:1px solid var(--yellow-border);padding:5px 12px;border-radius:6px}
+.feat-new{position:absolute;top:14px;right:14px;font-family:'Space Mono',monospace;font-size:.55rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:#fff;color:#050507;padding:4px 10px;border-radius:6px}
+.feat-dur{position:absolute;bottom:12px;right:12px;font-family:'Space Mono',monospace;font-size:.7rem;font-weight:700;color:var(--text);background:rgba(0,0,0,.8);padding:4px 10px;border-radius:5px}
+.feat-body{padding:2.5rem;display:flex;flex-direction:column;justify-content:center}
+.feat-body-tag{font-family:'Space Mono',monospace;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#daa520;margin-bottom:1rem}
+.feat-title{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.3rem;line-height:1.35;margin-bottom:1rem}
+.feat-desc{font-family:'Space Mono',monospace;font-size:.75rem;color:var(--text-dim);line-height:1.7;margin-bottom:1.5rem}
+.feat-meta{font-family:'Space Mono',monospace;font-size:.65rem;color:var(--text-muted);letter-spacing:.04em;margin-bottom:1.5rem}
+.feat-cta{display:flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#daa520;transition:text-shadow .3s,filter .3s}
+.feat-arrow{width:18px;height:18px;color:#daa520;transition:all .25s}
+
+/* Filter */
+.filter-bar{display:flex;align-items:center;gap:.6rem;margin-bottom:2rem;flex-wrap:wrap}
+.hub-search{flex:1 1 260px;min-width:220px;max-width:420px;padding:9px 16px;border-radius:8px;font-family:'Space Mono',monospace;font-size:.7rem;color:var(--text);background:rgba(255,255,255,0.04);border:1px solid var(--border);outline:none;transition:all .2s}
+.hub-search::placeholder{color:var(--text-muted)}
+.hub-search:focus{border-color:var(--border-hover);background:rgba(255,255,255,0.07)}
+.hub-empty{display:none;grid-column:1/-1;padding:3rem 1rem;text-align:center;font-family:'Space Mono',monospace;font-size:.8rem;color:var(--text-dim)}
+.hub-empty.show{display:block}
+.filter-btn{padding:8px 16px;border-radius:8px;font-family:'Space Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-dim);background:transparent;border:1px solid var(--border);cursor:pointer;transition:all .2s;white-space:nowrap}
+.filter-btn:hover{border-color:var(--border-hover);color:var(--text)}
+.filter-btn.active{border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);color:#fff}
+
+/* Video Grid */
+.video-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.2rem}
+.video-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;opacity:0;transform:translateY(25px);transition:opacity .45s ease,transform .45s ease,border-color .3s,background .3s,box-shadow .3s}
+.video-card.visible{opacity:1;transform:translateY(0)}
+.video-card:hover{border-color:var(--blue-border);background:var(--bg-card-hover);transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,255,255,0.03),0 4px 12px rgba(0,0,0,0.3)}
+.video-card:hover .card-play{opacity:1}
+.video-card:hover .card-arrow{transform:translateX(4px);color:#daa520}
+.video-card:hover .card-views{color:#daa520;text-shadow:0 0 15px rgba(218,165,32,0.4)}
+
+.card-top{position:relative;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--border)}
+/* ПРЕВЬЮ: замени на <img> с YouTube thumbnail */
+.card-thumb-img{width:100%;height:100%;object-fit:cover;display:block}
+.card-thumb-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:2.5rem;opacity:.15}
+.card-thumb-placeholder.t1{background:linear-gradient(135deg,#10132a,#1a1040)}
+.card-thumb-placeholder.t2{background:linear-gradient(135deg,#0f1520,#152030)}
+.card-thumb-placeholder.t3{background:linear-gradient(135deg,#121018,#201828)}
+.card-thumb-placeholder.t4{background:linear-gradient(135deg,#101520,#182030)}
+.card-thumb-placeholder.t5{background:linear-gradient(135deg,#0e1220,#181e35)}
+.card-thumb-placeholder.t6{background:linear-gradient(135deg,#121525,#1e2540)}
+.card-thumb-placeholder.t7{background:linear-gradient(135deg,#141020,#201535)}
+
+.card-tag{position:absolute;top:10px;left:10px;font-family:'Space Mono',monospace;font-size:.55rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);background:rgba(0,0,0,.7);backdrop-filter:blur(8px);border:1px solid var(--yellow-border);padding:3px 9px;border-radius:5px}
+.card-dur{position:absolute;bottom:8px;right:8px;font-family:'Space Mono',monospace;font-size:.6rem;font-weight:700;color:var(--text);background:rgba(0,0,0,.8);padding:3px 7px;border-radius:4px}
+.card-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(74,123,247,.07);opacity:0;transition:opacity .3s}
+.card-play svg{width:38px;height:38px;color:var(--blue);filter:drop-shadow(0 0 12px var(--blue-glow))}
+
+.card-body{padding:1.3rem;flex:1;display:flex;flex-direction:column}
+.card-title{font-family:'Unbounded',sans-serif;font-size:.8rem;font-weight:700;line-height:1.45;flex:1;margin-bottom:1rem}
+.card-footer{display:flex;align-items:center;justify-content:space-between;padding-top:.9rem;border-top:1px solid var(--border)}
+.card-views{font-family:'Space Mono',monospace;font-size:.6rem;color:#8a8aa0;letter-spacing:.04em;transition:text-shadow .3s,color .3s}
+.card-arrow{width:16px;height:16px;color:#8a8aa0;transition:all .25s}
+
+/* Consult strip */
+.consult-cta{max-width:1120px;margin:0 auto;padding:3rem 2rem 2.5rem}
+.consult-strip{display:flex;align-items:center;justify-content:space-between;gap:3rem;padding:3rem 3.5rem;border:1px dashed var(--border-dashed);border-radius:14px;background:var(--bg-card);position:relative;overflow:hidden}
+.consult-strip::before{content:'';position:absolute;right:-80px;top:-80px;width:250px;height:250px;background:radial-gradient(circle,var(--blue-dim) 0%,transparent 70%);pointer-events:none}
+.consult-strip-left{display:flex;align-items:center;gap:1.5rem;position:relative;z-index:1}
+.consult-strip-icon{width:44px;height:44px;border-radius:10px;background:var(--yellow-dim);border:1px solid var(--yellow-border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.consult-strip-text h3{font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.2rem;margin-bottom:.5rem}
+.consult-strip-text p{font-family:'Space Mono',monospace;font-size:.88rem;color:var(--text-dim);line-height:1.7}
+.consult-strip-text p strong{color:var(--yellow)}
+.consult-strip-btn{position:relative;z-index:1;display:inline-flex;align-items:center;gap:10px;padding:16px 32px;background:transparent;border:1px solid var(--border-hover);border-radius:10px;font-family:'Space Mono',monospace;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text);text-decoration:none;transition:all .25s;white-space:nowrap}
+.consult-strip-btn:hover{border-color:#f59e0b;background:#f59e0b;color:#050507}
+.consult-strip-btn svg{width:14px;height:14px;transition:transform .25s}
+.consult-strip-btn:hover svg{transform:translateX(3px)}
+
+/* Footer */
+.footer{max-width:1120px;margin:0 auto;padding:3rem 2rem;border-top:1px solid var(--border)}
+.footer-top{display:flex;align-items:flex-start;justify-content:space-between;gap:3rem;margin-bottom:2.5rem}
+.footer-brand .footer-logo{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.9rem;margin-bottom:.5rem}
+.footer-brand .footer-tagline{font-family:'Space Mono',monospace;font-size:.65rem;color:var(--text-muted);line-height:1.6}
+.footer-cols{display:flex;gap:4rem}
+.footer-col-title{font-family:'Space Mono',monospace;font-size:.55rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.8rem}
+.footer-col a{display:block;font-family:'Space Mono',monospace;font-size:.7rem;color:var(--text-dim);text-decoration:none;line-height:2;transition:color .2s}
+.footer-col a:hover{color:var(--blue)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;border-top:1px solid var(--border)}
+.footer-copy{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--text-muted)}
+.footer-made{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--text-muted)}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* Responsive */
+
+/* ══════════════════════════════════════════════════ */
+/* RESPONSIVE: ALL DEVICES                           */
+/* ══════════════════════════════════════════════════ */
+
+/* ── 4K / Ultra-wide (2560px+) ── */
+@media(min-width:2560px){
+  .nav{padding:0 6rem;max-width:2200px;margin:0 auto}
+  .section,.main,.consult-cta,.footer{max-width:1600px}
+  .hero-title{font-size:8rem!important}
+  .hero-sub{font-size:1.1rem;max-width:650px}
+  .hero-btn{padding:18px 40px;font-size:.9rem}
+  .about-box{padding:4rem;gap:4rem}
+  .about-photo img{width:250px!important;height:250px!important}
+  .about-name{font-size:1.8rem}
+  .about-bio{font-size:.9rem;max-width:600px}
+  .about-stat-value{font-size:1.8rem}
+  .video-grid{grid-template-columns:repeat(3,1fr);gap:1.8rem}
+  .featured{max-width:1400px}
+  .feat-title{font-size:1.6rem}
+  .feat-desc{font-size:.85rem}
+  .card-title{font-size:.95rem}
+  .consult-strip{padding:3.5rem 4rem}
+  .consult-strip-text h3{font-size:1.4rem}
+  .consult-strip-text p{font-size:1rem}
+  .footer{max-width:1600px}
+}
+
+/* ── 2K / Large desktop (1920px - 2559px) ── */
+@media(min-width:1920px) and (max-width:2559px){
+  .nav{padding:0 4rem}
+  .section,.main,.consult-cta,.footer{max-width:1400px}
+  .hero-title{font-size:7rem!important}
+  .hero-sub{font-size:1rem}
+  .about-box{padding:3.5rem;gap:3.5rem}
+  .about-photo img{width:220px!important;height:220px!important}
+  .about-name{font-size:1.6rem}
+  .video-grid{grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .feat-title{font-size:1.5rem}
+}
+
+/* ── Standard desktop (1440px - 1919px) ── */
+@media(min-width:1440px) and (max-width:1919px){
+  .hero-title{font-size:6.5rem!important}
+  .video-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* ── Small desktop / laptop (1024px - 1439px) ── */
+@media(min-width:1024px) and (max-width:1439px){
+  .hero-title{font-size:5.5rem!important}
+  .video-grid{grid-template-columns:repeat(3,1fr)}
+  .about-box{grid-template-columns:200px 1fr;gap:2.5rem}
+}
+
+/* ── Tablet landscape (768px - 1023px) ── */
+@media(min-width:768px) and (max-width:1023px){
+  .nav{padding:0 2rem}
+  .hero{padding:5rem 2rem 2rem}
+  .hero-title{font-size:4rem!important}
+  .hero-sub{font-size:.82rem}
+  .about{padding:2.5rem 2rem 1rem}
+  .about-box{grid-template-columns:180px 1fr;gap:2rem;padding:2.5rem}
+  .about-photo img{width:180px!important;height:auto!important;aspect-ratio:1!important}
+  .about-name{font-size:1.2rem}
+  .about-bio{font-size:.75rem}
+  .main{padding:2.5rem 2rem}
+  .featured{grid-template-columns:1fr 1fr}
+  .feat-title{font-size:1.1rem}
+  .feat-desc{font-size:.72rem}
+  .video-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+  .card-title{font-size:.78rem}
+  .consult-cta{padding:2rem}
+  .consult-strip{padding:2.5rem}
+  .footer{padding:2rem}
+  .footer-cols{gap:2.5rem}
+}
+
+/* ── Tablet portrait (600px - 767px) ── */
+@media(min-width:600px) and (max-width:767px){
+  .nav{padding:0 1.5rem;height:56px}
+  .nav-right .nav-link{display:none}
+  .hero{min-height:85vh;padding:5rem 1.5rem 2rem}
+  .hero-meta{display:none}
+  .hero-title{font-size:3.5rem!important}
+  .hero-sub{font-size:.78rem;max-width:85%}
+  .hero-btn{padding:14px 28px}
+  .about{padding:2rem 1.5rem 1rem}
+  .about-box{grid-template-columns:1fr;text-align:center;gap:2rem;padding:2rem}
+  .about-photo{display:flex;flex-direction:column;align-items:center}
+  .about-photo img{width:140px!important;height:140px!important;border-radius:16px!important}
+  .about-stats{justify-content:center}
+  .about-name{font-size:1.3rem}
+  .main{padding:2.5rem 1.5rem}
+  .featured{grid-template-columns:1fr}
+  .feat-thumb{border-right:none;border-bottom:1px solid var(--border)}
+  .feat-body{padding:2rem}
+  .video-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+  .card-title{font-size:.75rem}
+  .filter-bar{gap:.5rem}
+  .filter-btn{padding:7px 14px;font-size:.6rem}
+  .consult-cta{padding:1.5rem}
+  .consult-strip{flex-direction:column;align-items:center;text-align:center;gap:1.5rem;padding:2rem}
+  .consult-strip-left{flex-direction:column;align-items:center;gap:1rem}
+  .consult-strip-btn{width:100%;justify-content:center}
+  .footer{padding:2rem 1.5rem}
+  .footer-top{flex-direction:column;gap:2rem}
+  .footer-cols{flex-wrap:wrap;gap:2rem}
+  .footer-bottom{flex-direction:column;gap:.5rem;text-align:center}
+  .footer-brand{text-align:center}
+  .cursor-ring{display:none!important}
+}
+
+/* ── Phone landscape (480px - 599px) ── */
+@media(min-width:480px) and (max-width:599px){
+  .nav{padding:0 1.2rem;height:54px}
+  .nav-right .nav-link{display:none}
+  .nav-tg{padding:6px 12px;font-size:.6rem}
+  .hero{min-height:80vh;padding:4.5rem 1.2rem 2rem}
+  .hero-meta{display:none}
+  .hero-title{font-size:3rem!important}
+  .hero-sub{font-size:.75rem;max-width:90%}
+  .hero-btn{width:100%;justify-content:center;padding:14px 24px}
+  .hero-particles{display:none}
+  .about{padding:2rem 1.2rem 1rem}
+  .about-box{grid-template-columns:1fr;text-align:center;gap:1.5rem;padding:1.5rem}
+  .about-photo{display:flex;flex-direction:column;align-items:center}
+  .about-photo img{width:120px!important;height:120px!important;border-radius:14px!important}
+  .about-stats{justify-content:center;gap:2rem}
+  .about-name{font-size:1.2rem}
+  .about-bio{font-size:.72rem}
+  .main{padding:2rem 1.2rem}
+  .featured{grid-template-columns:1fr;margin-bottom:2.5rem}
+  .feat-thumb{border-right:none;border-bottom:1px solid var(--border)}
+  .feat-body{padding:1.5rem}
+  .feat-title{font-size:1.05rem}
+  .feat-desc{font-size:.7rem}
+  .filter-bar{gap:.4rem;margin-bottom:1.5rem}
+  .filter-btn{padding:6px 12px;font-size:.58rem}
+  .video-grid{grid-template-columns:repeat(2,1fr);gap:.8rem}
+  .card-title{font-size:.72rem}
+  .card-body{padding:1rem}
+  .card-tag{font-size:.5rem;padding:2px 7px}
+  .consult-cta{padding:1.5rem 1.2rem 1rem}
+  .consult-strip{flex-direction:column;align-items:center;text-align:center;gap:1.5rem;padding:1.5rem}
+  .consult-strip-left{flex-direction:column;align-items:center;gap:1rem}
+  .consult-strip-text h3{font-size:1rem}
+  .consult-strip-text p{font-size:.78rem}
+  .consult-strip-btn{width:100%;justify-content:center;padding:12px 20px}
+  .footer{padding:2rem 1.2rem}
+  .footer-top{flex-direction:column;gap:1.5rem}
+  .footer-cols{flex-wrap:wrap;gap:1.5rem}
+  .footer-bottom{flex-direction:column;gap:.5rem;text-align:center}
+  .footer-brand{text-align:center}
+  .footer-brand .footer-tagline{font-size:.6rem}
+  .cursor-ring{display:none!important}
+}
+
+/* ── Phone portrait standard (380px - 479px) ── */
+@media(max-width:479px) and (min-width:380px){
+  .nav{padding:0 1rem;height:52px}
+  .nav-right .nav-link{display:none}
+  .nav-logo-text{font-size:.85rem}
+  .nav-tg{padding:5px 10px;font-size:.58rem}
+  .hero{min-height:90vh;padding:4rem 1rem 2rem}
+  .hero-meta{display:none}
+  .hero-title{font-size:2.6rem!important}
+  .hero-sub{font-size:.72rem;max-width:95%;margin-bottom:1.5rem}
+  .hero-btn{width:100%;justify-content:center;padding:13px 20px;font-size:.72rem}
+  .hero-grid-bg{background-size:40px 40px}
+  .hero-particles{display:none}
+  .hero-status-text{font-size:.6rem}
+  .about{padding:1.5rem 1rem 1rem}
+  .about-box{grid-template-columns:1fr;text-align:center;gap:1.5rem;padding:1.5rem}
+  .about-photo{display:flex;flex-direction:column;align-items:center}
+  .about-photo img{width:110px!important;height:110px!important;border-radius:14px!important}
+  .about-stats{justify-content:center;gap:1.5rem}
+  .about-stat-value{font-size:1.1rem}
+  .about-name{font-size:1.1rem}
+  .about-role{font-size:.6rem}
+  .about-bio{font-size:.7rem;line-height:1.7}
+  .main{padding:2rem 1rem}
+  .feat-label{font-size:.58rem}
+  .featured{grid-template-columns:1fr;margin-bottom:2.5rem}
+  .feat-thumb{border-right:none;border-bottom:1px solid var(--border)}
+  .feat-body{padding:1.3rem}
+  .feat-title{font-size:1rem}
+  .feat-desc{font-size:.68rem}
+  .feat-body-tag{font-size:.55rem}
+  .feat-cta{font-size:.7rem}
+  .filter-bar{gap:.35rem;margin-bottom:1.2rem}
+  .filter-btn{padding:6px 10px;font-size:.55rem}
+  .video-grid{grid-template-columns:1fr;gap:1rem}
+  .card-title{font-size:.78rem}
+  .card-body{padding:1.1rem}
+  .section-title{font-size:1.8rem}
+  .section-protocol{font-size:.58rem;padding:5px 10px}
+  .consult-cta{padding:1.5rem 1rem 1rem}
+  .consult-strip{flex-direction:column;align-items:center;text-align:center;gap:1.2rem;padding:1.5rem 1.2rem}
+  .consult-strip-left{flex-direction:column;align-items:center;gap:.8rem}
+  .consult-strip-text h3{font-size:.95rem}
+  .consult-strip-text p{font-size:.75rem}
+  .consult-strip-btn{width:100%;justify-content:center;padding:13px 20px;font-size:.72rem}
+  .footer{padding:1.5rem 1rem}
+  .footer-top{flex-direction:column;gap:1.5rem}
+  .footer-cols{flex-direction:column;gap:1.5rem}
+  .footer-bottom{flex-direction:column;gap:.5rem;text-align:center}
+  .footer-brand{text-align:center}
+  .footer-brand .footer-tagline{font-size:.58rem}
+  .footer-logo{justify-content:center!important}
+  .cursor-ring{display:none!important}
+}
+
+/* ── Small phone (< 380px, e.g. iPhone SE, Galaxy S) ── */
+@media(max-width:379px){
+  .nav{padding:0 .8rem;height:50px}
+  .nav-right .nav-link{display:none}
+  .nav-logo img{height:22px!important;width:22px!important}
+  .nav-logo-text{font-size:.8rem}
+  .nav-tg{padding:5px 8px;font-size:.55rem;gap:5px}
+  .hero{min-height:90vh;padding:3.5rem .8rem 1.5rem}
+  .hero-meta{display:none}
+  .hero-title{font-size:2.1rem!important}
+  .hero-sub{font-size:.68rem;max-width:98%;margin-bottom:1.5rem;line-height:1.7}
+  .hero-btn{width:100%;justify-content:center;padding:12px 16px;font-size:.68rem}
+  .hero-grid-bg{background-size:35px 35px}
+  .hero-particles{display:none}
+  .hero-status-text{font-size:.55rem}
+  .hero-status{margin-bottom:1.5rem}
+  .about{padding:1.2rem .8rem .8rem}
+  .about-box{grid-template-columns:1fr;text-align:center;gap:1.2rem;padding:1.2rem}
+  .about-photo img{width:90px!important;height:90px!important;border-radius:12px!important}
+  .about-stats{justify-content:center;gap:1.2rem}
+  .about-stat-value{font-size:1rem}
+  .about-stat-label{font-size:.5rem}
+  .about-name{font-size:1rem}
+  .about-role{font-size:.55rem}
+  .about-bio{font-size:.65rem;line-height:1.6}
+  .main{padding:1.5rem .8rem}
+  .feat-label{font-size:.55rem}
+  .featured{grid-template-columns:1fr;margin-bottom:2rem}
+  .feat-thumb{border-right:none;border-bottom:1px solid var(--border)}
+  .feat-body{padding:1rem}
+  .feat-title{font-size:.9rem}
+  .feat-desc{font-size:.65rem}
+  .feat-body-tag{font-size:.5rem}
+  .feat-cta{font-size:.65rem}
+  .feat-tag{font-size:.5rem;padding:3px 7px}
+  .feat-new{font-size:.45rem;padding:3px 7px}
+  .filter-bar{gap:.3rem;margin-bottom:1rem;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .filter-bar::-webkit-scrollbar{display:none}
+  .filter-btn{padding:5px 9px;font-size:.52rem;flex-shrink:0}
+  .video-grid{grid-template-columns:1fr;gap:.8rem}
+  .card-title{font-size:.72rem}
+  .card-body{padding:1rem}
+  .card-tag{font-size:.48rem;padding:2px 6px}
+  .card-dur{font-size:.52rem}
+  .card-views{font-size:.55rem}
+  .section-title{font-size:1.5rem}
+  .section-protocol{font-size:.52rem;padding:4px 8px}
+  .section-desc{font-size:.7rem}
+  .consult-cta{padding:1rem .8rem .8rem}
+  .consult-strip{flex-direction:column;align-items:center;text-align:center;gap:1rem;padding:1.2rem 1rem}
+  .consult-strip-left{flex-direction:column;align-items:center;gap:.8rem}
+  .consult-strip-left img{width:56px!important;height:56px!important}
+  .consult-strip-text h3{font-size:.85rem}
+  .consult-strip-text p{font-size:.7rem}
+  .consult-strip-btn{width:100%;justify-content:center;padding:12px 16px;font-size:.68rem}
+  .footer{padding:1.5rem .8rem}
+  .footer-top{flex-direction:column;gap:1.2rem}
+  .footer-cols{flex-direction:column;gap:1.2rem}
+  .footer-col a{font-size:.62rem}
+  .footer-col-title{font-size:.5rem}
+  .footer-bottom{flex-direction:column;gap:.4rem;text-align:center}
+  .footer-brand{text-align:center}
+  .footer-brand .footer-tagline{font-size:.55rem}
+  .footer-logo{justify-content:center!important;font-size:.78rem!important}
+  .footer-copy{font-size:.52rem}
+  .footer-made{font-size:.52rem}
+  .cursor-ring{display:none!important}
+}
+
+/* ── Landscape phones (short height) ── */
+@media(max-height:500px) and (orientation:landscape){
+  .hero{min-height:100vh;padding:4rem 2rem 1.5rem}
+  .hero-title{font-size:2.8rem!important}
+  .hero-sub{font-size:.7rem;margin-bottom:1.5rem}
+  .hero-status{margin-bottom:1rem}
+  .scroll-arrow{display:none}
+  .hero-particles{display:none}
+}
+
+/* ── Landscape tablets ── */
+@media(min-height:500px) and (max-height:800px) and (orientation:landscape) and (min-width:768px){
+  .hero{min-height:100vh;padding:5rem 3rem 2rem}
+  .hero-title{font-size:4rem!important}
+}
+
+/* ── High-DPI / Retina adjustments ── */
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+  .hero-grid-bg{background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)}
+}
+
+/* ── Reduced motion preference ── */
+@media(prefers-reduced-motion:reduce){
+  .glitch,.glitch-ready:hover{animation:none!important}
+  .hero-scan-line{display:none}
+  .hero-particles{display:none}
+  .hero-grid-bg{animation:none!important}
+  *{transition-duration:0.01ms!important;animation-duration:0.01ms!important}
+}
+
+.poleznoe-section{max-width:1120px;margin:0 auto;padding:5rem 2rem 4rem}
+.poleznoe-label{font-family:'Space Mono',monospace;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:2rem;display:flex;align-items:center;gap:12px}
+.poleznoe-label .dot{width:9px;height:9px;background:var(--yellow);border-radius:50%;animation:blink 2s ease-in-out infinite;box-shadow:0 0 14px rgba(218,165,32,.8)}
+.poleznoe-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.poleznoe-card{padding:3rem 2.8rem;border:2px solid rgba(218,165,32,0.25);border-radius:22px;background:linear-gradient(145deg,#151114 0%,#0e0b0e 100%);position:relative;overflow:hidden;display:flex;align-items:flex-start;gap:2rem;text-decoration:none;color:inherit;transition:all .35s;box-shadow:0 10px 40px rgba(0,0,0,0.4),inset 0 1px 0 rgba(218,165,32,0.1)}
+.poleznoe-card::before{content:'';position:absolute;right:-100px;top:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(218,165,32,0.18) 0%,transparent 60%);pointer-events:none;transition:opacity .35s;opacity:1}
+.poleznoe-card::after{content:'';position:absolute;left:-80px;bottom:-80px;width:260px;height:260px;background:radial-gradient(circle,rgba(218,165,32,0.08) 0%,transparent 60%);pointer-events:none}
+.poleznoe-card:hover{border-color:var(--yellow);transform:translateY(-5px);box-shadow:0 25px 80px rgba(0,0,0,0.5),0 0 60px rgba(218,165,32,0.25),inset 0 1px 0 rgba(218,165,32,0.2)}
+.poleznoe-card:hover::before{opacity:1.3;background:radial-gradient(circle,rgba(218,165,32,0.3) 0%,transparent 60%)}
+.poleznoe-card:hover .poleznoe-btn{border-color:var(--yellow);background:var(--yellow);color:#050507;box-shadow:0 0 30px rgba(218,165,32,0.5)}
+.poleznoe-card:hover .poleznoe-btn svg{transform:translateX(5px)}
+.poleznoe-card:hover .poleznoe-icon-wrap{border-color:rgba(218,165,32,0.5);box-shadow:0 0 40px rgba(218,165,32,0.25)}
+.poleznoe-card-soon{cursor:default;border-color:rgba(255,255,255,0.08)}
+.poleznoe-card-soon::before{background:radial-gradient(circle,rgba(255,255,255,0.04) 0%,transparent 60%);opacity:.6}
+.poleznoe-card-soon:hover{border-color:rgba(255,255,255,0.12);transform:none;box-shadow:0 10px 40px rgba(0,0,0,0.4)}
+.poleznoe-card-soon:hover::before{background:radial-gradient(circle,rgba(255,255,255,0.05) 0%,transparent 60%);opacity:.6}
+.poleznoe-card-soon:hover .poleznoe-btn{border-color:var(--border-hover);background:transparent;color:var(--text-muted);box-shadow:none}
+.poleznoe-card-soon:hover .poleznoe-btn svg{transform:none}
+.poleznoe-card-soon:hover .poleznoe-icon-wrap{border-color:var(--border);box-shadow:none}
+.poleznoe-icon-wrap{flex-shrink:0;width:92px;height:92px;border-radius:20px;background:rgba(255,255,255,0.05);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;padding:14px;transition:all .35s}
+.poleznoe-icon{width:100%;height:100%;object-fit:contain}
+.poleznoe-card-body{display:flex;flex-direction:column;gap:1rem;position:relative;z-index:1;flex:1}
+.poleznoe-title{font-family:'Unbounded',sans-serif;font-weight:900;font-size:1.65rem;line-height:1.2;margin:0;color:#fff;letter-spacing:-.01em}
+.poleznoe-desc{font-family:'Space Mono',monospace;font-size:.85rem;color:var(--text-dim);line-height:1.75;margin:0}
+.poleznoe-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 32px;background:transparent;border:2px solid var(--yellow);border-radius:12px;font-family:'Space Mono',monospace;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--yellow);transition:all .3s;white-space:nowrap;align-self:flex-start;margin-top:.6rem}
+.poleznoe-btn svg{width:16px;height:16px;transition:transform .3s}
+.poleznoe-btn-soon{opacity:.45;color:var(--text-muted);border-color:var(--border-hover)}
+@media(max-width:900px){
+  .poleznoe-grid{grid-template-columns:1fr;gap:1.2rem}
+}
+@media(max-width:600px){
+  .poleznoe-section{padding:3rem 1.2rem 2rem}
+  .poleznoe-card{padding:2rem 1.6rem;gap:1.4rem;flex-direction:column}
+  .poleznoe-icon-wrap{width:72px;height:72px;padding:12px}
+  .poleznoe-title{font-size:1.25rem}
+  .poleznoe-desc{font-size:.75rem}
+  .poleznoe-btn{width:100%;justify-content:center;font-size:.72rem;padding:14px 22px}
+  .poleznoe-label{font-size:.7rem;margin-bottom:1.2rem}
+}
+
+/* ===== INTENSIV CTA ===== */
+.intensiv-section{max-width:1120px;margin:0 auto;padding:1rem 2rem 5rem}
+.intensiv-card{display:block;position:relative;overflow:hidden;border-radius:28px;padding:4rem 4rem 3.5rem;background:linear-gradient(135deg,#1a1410 0%,#0d0a0a 100%);border:2px solid rgba(218,165,32,0.4);text-decoration:none;color:inherit;box-shadow:0 25px 80px rgba(0,0,0,0.5),0 0 60px rgba(218,165,32,0.15),inset 0 1px 0 rgba(218,165,32,0.2);transition:all .4s cubic-bezier(0.4,0,0.2,1)}
+.intensiv-card:hover{border-color:var(--yellow);transform:translateY(-4px);box-shadow:0 35px 100px rgba(0,0,0,0.6),0 0 100px rgba(218,165,32,0.3),inset 0 1px 0 rgba(218,165,32,0.3)}
+.intensiv-card:hover .intensiv-btn{background:#fff;color:#050507;box-shadow:0 0 50px rgba(255,235,150,0.6)}
+.intensiv-card:hover .intensiv-btn svg{transform:translateX(5px)}
+.intensiv-card:hover .intensiv-glow-1{opacity:1.2}
+.intensiv-card:hover .intensiv-money{filter:brightness(1.2)}
+
+.intensiv-glow-1{position:absolute;right:-150px;top:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(255,210,80,0.18) 0%,transparent 60%);pointer-events:none;transition:opacity .4s;z-index:0}
+.intensiv-glow-2{position:absolute;left:-100px;bottom:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(218,165,32,0.12) 0%,transparent 60%);pointer-events:none;z-index:0}
+.intensiv-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(218,165,32,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(218,165,32,0.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;mask-image:radial-gradient(ellipse at center,black 30%,transparent 80%);z-index:0}
+
+.intensiv-content{position:relative;z-index:1}
+.intensiv-header{margin-bottom:2.5rem}
+.intensiv-tag{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin-bottom:1.4rem;padding:8px 16px;border:1px solid rgba(218,165,32,0.3);border-radius:100px;background:rgba(218,165,32,0.06)}
+.intensiv-dot{width:7px;height:7px;background:var(--yellow);border-radius:50%;animation:blink 2s ease-in-out infinite;box-shadow:0 0 12px rgba(218,165,32,.7)}
+.intensiv-title{font-family:'Unbounded',sans-serif;font-weight:900;font-size:2.6rem;line-height:1.1;letter-spacing:-.02em;color:#fff;margin:0;text-transform:uppercase}
+.intensiv-money{background:linear-gradient(135deg,#ffd95a 0%,#daa520 50%,#fff1a8 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;filter:drop-shadow(0 0 30px rgba(255,217,90,0.4));transition:filter .4s}
+
+.intensiv-cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding-top:2rem;border-top:1px solid rgba(218,165,32,0.15);margin-bottom:2.5rem}
+.intensiv-col-title{font-family:'Space Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow);margin-bottom:1.4rem;opacity:.85}
+.intensiv-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem}
+.intensiv-list li{display:flex;align-items:flex-start;gap:14px;font-family:'Space Mono',monospace;font-size:.92rem;line-height:1.55;color:#e0e0e8;letter-spacing:-.01em}
+.intensiv-check{flex-shrink:0;width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#daa520 0%,#ffd95a 100%);color:#050507;font-weight:900;font-size:.75rem;display:flex;align-items:center;justify-content:center;margin-top:1px;box-shadow:0 0 12px rgba(218,165,32,0.4)}
+.intensiv-bonus-icon{flex-shrink:0;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:1rem;margin-top:1px}
+
+.intensiv-footer{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-top:2rem;border-top:1px solid rgba(218,165,32,0.15);flex-wrap:wrap}
+.intensiv-price{font-family:'Unbounded',sans-serif;font-size:1.05rem;letter-spacing:-.01em}
+.intensiv-price strong{color:var(--yellow);font-weight:800}
+.intensiv-price span{color:var(--text-muted);font-weight:400}
+.intensiv-btn{display:inline-flex;align-items:center;gap:12px;padding:18px 38px;background:linear-gradient(135deg,#ffd95a 0%,#daa520 100%);color:#050507;font-family:'Unbounded',sans-serif;font-size:.95rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:14px;transition:all .35s;box-shadow:0 10px 30px rgba(218,165,32,0.3),0 0 30px rgba(218,165,32,0.2)}
+.intensiv-btn svg{width:18px;height:18px;transition:transform .35s}
+
+@media(max-width:900px){
+  .intensiv-section{padding:1rem 1.5rem 3rem}
+  .intensiv-card{padding:2.5rem 2rem 2rem;border-radius:22px}
+  .intensiv-title{font-size:1.7rem}
+  .intensiv-cols{grid-template-columns:1fr;gap:2rem}
+  .intensiv-list li{font-size:.82rem}
+}
+@media(max-width:600px){
+  .intensiv-section{padding:.5rem 1rem 2rem}
+  .intensiv-card{padding:2rem 1.4rem 1.6rem}
+  .intensiv-title{font-size:1.35rem}
+  .intensiv-tag{font-size:.6rem;padding:6px 12px}
+  .intensiv-col-title{font-size:.62rem}
+  .intensiv-list li{font-size:.76rem;gap:10px}
+  .intensiv-check,.intensiv-bonus-icon{width:18px;height:18px;font-size:.65rem}
+  .intensiv-footer{flex-direction:column;align-items:stretch;gap:1.2rem}
+  .intensiv-price{text-align:center;font-size:.9rem}
+  .intensiv-btn{width:100%;justify-content:center;font-size:.78rem;padding:16px 22px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    
+    <img src="img/99520fd3333c.png" style="height:28px;width:28px;border-radius:6px">
+    <span class="nav-logo-text">MASTODONT</span>
+  </a>
+  <div class="nav-right">
+    <a href="#videos" class="nav-link">Материалы</a>
+    <a href="https://www.youtube.com/@aiBoomb" target="_blank" class="nav-link">YouTube</a>
+    <a href="https://t.me/Mastatop" target="_blank" class="nav-tg">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+      TG Kanal
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-scan-line"></div>
+  <div class="hero-particles">
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+  </div>
+  <div class="hero-status">
+    <div class="hero-status-dot"></div>
+    <span class="hero-status-text">Система активна · 2026</span>
+  </div>
+  <h1 class="hero-title glitch">MASTODONT<br><span class="blue">AI HUB</span></h1>
+  <p class="hero-sub">
+    <strong>Промпты</strong>, гайды и инструкции к каждому видео.<br>
+    Выбери видео → <span class="bl">забери материалы</span> → внедряй.
+  </p>
+  <a href="#intensiv" class="hero-btn hero-btn-intensiv">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+    Пройти бесплатный интенсив
+  </a>
+</section>
+
+<!-- ══════ ABOUT ══════ -->
+<section class="about">
+  <div class="about-box reveal">
+    <div class="about-photo">
+      <!-- TODO: замени placeholder на <img src="photo.jpg" class="about-photo-img"> -->
+      <img src="img/7a6a8931599b.jpg" style="width:100%;height:100%;border-radius:16px;object-fit:cover;object-position:center top">
+      
+    </div>
+    <div class="about-content">
+      <h2 class="about-name">AI MASTODONT</h2>
+      <div class="about-role">Founder & Strategist</div>
+      <p class="about-bio">
+        Не просто рассказываю про инструменты и новости. <strong>Погружаюсь в каждый инструмент</strong>, показываю как строить и получать результат. <span class="bl">Claude</span>, <span class="bl">AntiGravity</span>, <span class="bl">NotebookLM</span> - разбираю на практике. Здесь все материалы к видео: промпты, инструкции, ресурсы. Бери и внедряй.
+      </p>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-value">33</div>
+          <div class="about-stat-label">Гайдов</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">1 092 872</div>
+          <div class="about-stat-label">Просмотров</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-value">2026</div>
+          <div class="about-stat-label">Актуально</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ VIDEOS ══════ -->
+<div class="main" id="videos">
+
+  <!-- Featured -->
+  <div class="feat-label reveal"><span class="dot"></span> Новое видео</div>
+  <a href="https://gomymy64.github.io/astra-vs-fable-cheatsheet/" target="_blank" class="featured reveal">
+    <div class="feat-thumb">
+      <img src="img/astra-vs-fable-v2.jpg" class="feat-thumb-img">
+      <div class="feat-play"><svg viewBox="0 0 24 24" fill="currentColor" width="56" height="56"><path d="M8 5v14l11-7z"/></svg></div>
+      <span class="feat-tag">GPT-6 · Fable 5.1</span>
+      <span class="feat-new">New</span>
+      <span class="feat-dur">24:53</span>
+    </div>
+    <div class="feat-body">
+      <div class="feat-body-tag">Последний выпуск</div>
+      <h2 class="feat-title">Самый Неподкупный обзор GPT-6 Astra против Fable 5.1 (Из-за чего хайп то?)</h2>
+      <p class="feat-desc">GPT-6 Astra против Fable 5.1 без прикрас: где хайп, а где реальность. Все тесты и промпты внутри.</p>
+      <div class="feat-cta">Забрать материалы <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+    </div>
+  </a>
+
+  <!-- Filters -->
+  <div class="filter-bar reveal">
+    <input type="search" id="hub-search" class="hub-search" placeholder="Поиск по гайдам — сайты, агенты, бесплатно..." autocomplete="off">
+    <button class="filter-btn active" data-filter="all">Все</button>
+    <button class="filter-btn" data-filter="sites">Сайты и дизайн</button>
+    <button class="filter-btn" data-filter="agents">Агенты и автоматизация</button>
+    <button class="filter-btn" data-filter="cheap">Бесплатно и дёшево</button>
+    <button class="filter-btn" data-filter="media">Видео и картинки</button>
+    <button class="filter-btn" data-filter="money">Заработок</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="video-grid">
+    <a href="https://gomymy64.github.io/aisa-claude-superman-cheatsheet/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/aisa-superman.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · AIsa</span><span class="card-dur">25:54</span></div>
+      <div class="card-body"><h3 class="card-title">Как Я Превратил Claude в Супермена Поиска (AIsa)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/chatllm-abacus-cheatsheet/" target="_blank" class="video-card" data-tags="cheap agents">
+      <div class="card-top"><img src="img/chatllm-abacus.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">ChatLLM</span><span class="card-dur">18:01</span></div>
+      <div class="card-body"><h3 class="card-title">Все Топовые Нейросети за $10 в Месяц (ChatLLM)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/minimax-code-cheatsheet/" target="_blank" class="video-card" data-tags="media sites cheap">
+      <div class="card-top"><img src="img/minimax-code.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">MiniMax Code</span><span class="card-dur">31:45</span></div>
+      <div class="card-body"><h3 class="card-title">MiniMax Code - Как Я Заменил 5 Нейросетей Одной (Сайты, Видео, Озвучка)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/design-loop-cheatsheet/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/design-loop.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Дизайн</span><span class="card-dur">18:20</span></div>
+      <div class="card-body"><h3 class="card-title">Преврати Claude в Дизайн-Гения за 3 Шага... Просто Смотри</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/claude-design-cheatsheet/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/claude-design-3.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude Design 3.0</span><span class="card-dur">23:35</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Design 3.0 Только Что Убил ИИ-Слоп Навсегда</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/claude-generate-cheatsheet/" target="_blank" class="video-card" data-tags="media cheap">
+      <div class="card-top"><img src="img/claude-generate.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Генерация</span><span class="card-dur">18:18</span></div>
+      <div class="card-body"><h3 class="card-title">Этот Скилл Claude Заменил Мне Платную Подписку (Higgsfield)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/antislop-design-cheatsheet/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/antislop-design-v2.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude Code · Дизайн</span><span class="card-dur">30:31</span></div>
+      <div class="card-body"><h3 class="card-title">Преврати Claude в ГЕНИЯ Дизайна за 3 Простых Шага (Claude Code)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/fable5-website-cheatsheet/" target="_blank" class="video-card" data-tags="sites money">
+      <div class="card-top"><img src="img/fable5-website.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Fable 5</span><span class="card-dur">14:43</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Fable 5 Собрал Сайт за $10.000 за Минуты</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/launch-your-agent-cheatsheet/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/launch-your-agent.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude Code · Агенты</span><span class="card-dur">19:50</span></div>
+      <div class="card-body"><h3 class="card-title">НОВЫЙ Скилл Claude Code Собирает ИИ-Агентов за МИНУТЫ</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/ollama-local-ai-cheatsheet/" target="_blank" class="video-card" data-tags="cheap local">
+      <div class="card-top"><img src="img/ollama.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Ollama · Локальный AI</span><span class="card-dur">24:18</span></div>
+      <div class="card-body"><h3 class="card-title">Запусти Самый Мощный ИИ Локально — БЕСПЛАТНО и Без Лимитов (Ollama)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/opus48-dynamic-workflows/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/opus48.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Opus 4.8</span><span class="card-dur">28:09</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code + Армия Агентов = Это БЕЗУМИЕ (Opus 4.8)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/Stitch-Claude-Code/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/stitch-claude-code.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Stitch</span><span class="card-dur">26:38</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code + Stitch 2.0 УНИЧТОЖАЮТ Веб-дизайн (Убийца Figma)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/three-brain-cheatsheet/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/25a21722b895.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Codex · Gemini</span><span class="card-dur">14:53</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code Стал в 10 РАЗ БЕЗУМНЕЕ (Codex + Gemini)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <a href="https://gomymy64.github.io/deepseek-claude-cheatsheet/" target="_blank" class="video-card" data-tags="cheap">
+      <div class="card-top"><img src="img/fff4f2495fd6.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">DeepSeek · Claude</span><span class="card-dur">22:02</span></div>
+      <div class="card-body"><h3 class="card-title">DeepSeek V4 + Claude Code = 100X ДЕШЕВЛЕ</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/claude-money-prompts/" target="_blank" class="video-card" data-tags="money agents">
+      <div class="card-top"><img src="img/f06ab689ce84.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude</span><span class="card-dur">13:12</span></div>
+      <div class="card-body"><h3 class="card-title">Я попросил Claude заработать мне как можно БОЛЬШЕ денег</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/claude-design-guide/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/6f29c7a0412c.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude Design</span><span class="card-dur">27:12</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Design только что вышел... Разблокируй Суперспособности</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/claude-code-2-cheatsheet/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/3c00e533d46c.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude Code</span><span class="card-dur">17:10</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code 2.0 Уже Здесь... Автоматизируй Что Угодно</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/jarvis-memory/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/370f6189f4ea.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Obsidian</span><span class="card-dur">23:49</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code + Obsidian ВЗОРВАЛИ Интернет (Метод Андрея Карпати)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/gemma4-cheatsheet/" target="_blank" class="video-card" data-tags="cheap local">
+      <div class="card-top"><img src="img/cc76fb608e05.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Gemma · Ollama</span><span class="card-dur">13:14</span></div>
+      <div class="card-body"><h3 class="card-title">Как Я Использую Claude Code БЕСПЛАТНО (Gemma 4 + Ollama)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/cheatsheet-notebooklm/" target="_blank" class="video-card" data-tags="agents cheap">
+      <div class="card-top"><img src="img/bb26e83a1215.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · NotebookLM</span><span class="card-dur">18:13</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code + NotebookLM = БЕСКОНЕЧНАЯ Память (Бесплатно)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/crazy-websites/" target="_blank" class="video-card" data-tags="sites money">
+      <div class="card-top"><img src="img/caaf5d80b776.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Nano Banana · FireCrawl</span><span class="card-dur">17:06</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code + Nano Banana 2 + FireCrawl = БЕЗУМНЫЕ Сайты за $12К</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/cheatsheet-claude-code-free/" target="_blank" class="video-card" data-tags="cheap">
+      <div class="card-top"><img src="img/2543906bc212.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude</span><span class="card-dur">13:15</span></div>
+      <div class="card-body"><h3 class="card-title">Claude Code — Как Я Использую БЕСПЛАТНО Навсегда (OpenRouter)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/stitch-claude-cheatsheet/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/a651d90f25df.jpg" class="card-thumb-img" loading="lazy"><span class="card-tag">Claude · Stitch</span><span class="card-dur">17:50</span></div>
+      <div class="card-body"><h3 class="card-title">Stitch — Как Я Делаю Сайты за 10 Минут (Claude Code)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    
+    <a href="https://gomymy64.github.io/cheatsheet-nano-banana/" target="_blank" class="video-card" data-tags="media sites">
+      <div class="card-top"><img src="img/9b723aa8ba21.jpg" class="card-thumb-img"><span class="card-tag">AntiGravity · Claude</span><span class="card-dur">17:50</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">Безумный Конструктор Сайтов (Claude + AntiGravity)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/NotebookLM-Antigravity/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/f555b3b8c806.jpg" class="card-thumb-img"><span class="card-tag">NotebookLM + AntiGravity</span><span class="card-dur">36:56</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">NotebookLM Получил НОВУЮ Суперсилу (AntiGravity)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/Skills-2.0-Claude-Guide/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/965675af885f.jpg" class="card-thumb-img"><span class="card-tag">Claude Code</span><span class="card-dur">31:37</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">Claude Code СТАЛ НЕУДЕРЖИМ (Skills 2.0)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/cheatsheets/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/c4d41b61f98d.jpg" class="card-thumb-img"><span class="card-tag">Claude Cowork</span><span class="card-dur">19:05</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">5 БЕЗУМНЫХ способов использовать Claude Cowork</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/Gemini-3.1-Pro-AntiGravity-Crazy-Web-Sites/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/e148c421fc46.jpg" class="card-thumb-img"><span class="card-tag">Gemini + AntiGravity</span><span class="card-dur">18:26</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">Gemini 3.1 Pro + AntiGravity УНИЧТОЖАЮТ веб-дизайнеров</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/stitch-antigravity/" target="_blank" class="video-card" data-tags="sites">
+      <div class="card-top"><img src="img/8ceba8dda2aa.jpg" class="card-thumb-img"><span class="card-tag">AntiGravity + Stitch</span><span class="card-dur">23:19</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">AntiGravity + Stitch создают БЕЗУМНЫЕ сайты</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/notebooklm-x10-Antigravity/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/27badf4b2069.jpg" class="card-thumb-img"><span class="card-tag">NotebookLM</span><span class="card-dur">29:16</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">NotebookLM стал в 10 раз лучше (AntiGravity)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/Creatr-Startup-50k/" target="_blank" class="video-card" data-tags="money sites">
+      <div class="card-top"><img src="img/8bb2fa39f9a1.jpg" class="card-thumb-img"><span class="card-tag">Google AntiGravity</span><span class="card-dur">22:29</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">IT-Стартап за $50,000 БЕЗ КОДА (Google AntiGravity)</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+
+    <a href="https://gomymy64.github.io/Antigravity-Full-Guide/" target="_blank" class="video-card" data-tags="agents">
+      <div class="card-top"><img src="img/9bb7260165c5.jpg" class="card-thumb-img"><span class="card-tag">Google AntiGravity</span><span class="card-dur">17:56</span><div class="card-play"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="38" height="38"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/></svg></div></div>
+      <div class="card-body"><h3 class="card-title">Google AntiGravity: Как использовать ИИ лучше 99% людей</h3><div class="card-footer"><span class="card-views">Смотреть гайд</span><svg class="card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div></div>
+    </a>
+    <div class="hub-empty" id="hub-empty">Ничего не нашлось. Попробуй другое слово или нажми «Все».</div>
+  </div>
+</div>
+
+
+
+<!-- INTENSIV CTA -->
+<section class="intensiv-section" id="intensiv">
+  <a href="https://t.me/mastodont_aibot?start=mini_kurs" target="_blank" class="intensiv-card reveal">
+    <div class="intensiv-glow-1"></div>
+    <div class="intensiv-glow-2"></div>
+    <div class="intensiv-grid-bg"></div>
+    <div class="intensiv-content">
+      <div class="intensiv-header">
+        <div class="intensiv-tag"><span class="intensiv-dot"></span> Бесплатно · Навсегда</div>
+        <h2 class="intensiv-title">Первые <span class="intensiv-money">$2000</span> на ИИ —<br>бесплатный интенсив</h2>
+      </div>
+      <div class="intensiv-cols">
+        <div class="intensiv-col">
+          <div class="intensiv-col-title">Внутри</div>
+          <ul class="intensiv-list">
+            <li><span class="intensiv-check">✓</span> Реальный демо AntiGravity вживую</li>
+            <li><span class="intensiv-check">✓</span> Софт, который за 5 минут находит компании без сайтов с готовыми контактами</li>
+            <li><span class="intensiv-check">✓</span> Кейсы учеников: $1650 за 3 проекта без команды</li>
+          </ul>
+        </div>
+        <div class="intensiv-col">
+          <div class="intensiv-col-title">Два бонуса в конце</div>
+          <ul class="intensiv-list">
+            <li><span class="intensiv-bonus-icon">💰</span> 50 скучных и самых прибыльных ниш без конкуренции</li>
+            <li><span class="intensiv-bonus-icon">🚀</span> Чек-лист: первые $500 за 7 дней</li>
+          </ul>
+        </div>
+      </div>
+      <div class="intensiv-footer">
+        <div class="intensiv-price"><strong>Бесплатно.</strong> <span>Навсегда.</span></div>
+        <div class="intensiv-btn">Забрать интенсив <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg></div>
+      </div>
+    </div>
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo" style="display:flex;align-items:center;gap:8px"><img src="img/99520fd3333c.png" style="height:22px;width:22px;border-radius:4px"> MASTODONT AI HUB</div>
+      <div class="footer-tagline">Все материалы к видео в одном месте.<br>Строй системы или продавай решения.</div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <div class="footer-col-title">Ресурсы</div>
+        <div class="footer-col">
+          <a href="https://www.youtube.com/@aiBoomb" target="_blank">YouTube канал</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Telegram</div>
+        <div class="footer-col">
+          <a href="https://t.me/mastodont_aibot?start=agency" target="_blank">Вступить → забрать план</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Связь</div>
+        <div class="footer-col">
+          <a href="https://t.me/Mastatop" target="_blank">Написать Мастодонту</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 MASTODONT AI HUB</span>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.06});
+document.querySelectorAll('.reveal,.video-card').forEach(el=>obs.observe(el));
+document.querySelectorAll('.video-card').forEach((c,i)=>{c.style.transitionDelay=`${i*.06}s`});
+
+let hubFilter='all';
+const hubSearchEl=document.getElementById('hub-search');
+const hubEmptyEl=document.getElementById('hub-empty');
+function hubApply(){
+  const q=(hubSearchEl&&hubSearchEl.value||'').trim().toLowerCase();
+  let shown=0;
+  document.querySelectorAll('.video-card').forEach(card=>{
+    const tags=(card.dataset.tags||'').toLowerCase();
+    const title=(card.querySelector('.card-title')?card.querySelector('.card-title').textContent:'').toLowerCase();
+    const byFilter=(hubFilter==='all')||tags.split(/\s+/).includes(hubFilter);
+    const bySearch=!q||title.includes(q)||tags.includes(q);
+    const ok=byFilter&&bySearch;
+    card.style.display=ok?'':'none';
+    if(ok)shown++;
+  });
+  if(hubEmptyEl)hubEmptyEl.classList.toggle('show',shown===0);
+}
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    hubFilter=btn.dataset.filter;
+    hubApply();
+  });
+});
+if(hubSearchEl)hubSearchEl.addEventListener('input',hubApply);
+</script>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<script>
+(function(){
+  const dot=document.getElementById('cursorDot'),ring=document.getElementById('cursorRing');
+  if(!dot||!ring)return;
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
+  function lerp(){rx+=(mx-rx)*.08;ry+=(my-ry)*.08;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(lerp)}
+  lerp();
+  document.querySelectorAll('a,button,.btn,.hero-btn,.btn-arrow,.video-card,.featured,.filter-btn,.nav-tg,.consult-strip-btn').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{dot.classList.add('hovering');ring.classList.add('hovering')});
+    el.addEventListener('mouseleave',()=>{dot.classList.remove('hovering');ring.classList.remove('hovering')});
+  });
+  
+// Fix: after intro animation, swap to hover-ready class
+document.querySelector('.hero-title.glitch')?.addEventListener('animationend',function(){
+  this.classList.remove('glitch');
+  this.classList.add('glitch-ready');
+},{ once:true });
+  // Hide on mobile
+  if('ontouchstart' in window){dot.style.display='none';ring.style.display='none'}
+})();
+</script>
+
+</body>
+</html>
